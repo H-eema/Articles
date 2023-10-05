@@ -104,7 +104,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql",
         "HOST": "localhost",
         "USER": "postgres",
-        "PASSWORD": "42213",
+        "PASSWORD": env.str("POSTGRES_PASSWORD"),
         "NAME": "NewspaperAPI",
         "port": "5432",
         "CONN_MAX_AGE": None,
